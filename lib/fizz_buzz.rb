@@ -10,13 +10,17 @@ def fizz_buzz(number)
 end
 
 def divisible_by_three?(number)
-  number % 3 == 0
+  has_zero_reminder(number, 3)
 end
 
 def divisible_by_five?(number)
-  number % 5 == 0
+  has_zero_reminder(number, 5)
 end
 
 def divisible_by_fifteen?(number)
-  number % 15 == 0
+  has_zero_reminder(number, 15)
+end
+
+def has_zero_reminder(number, divider)
+  number % divider == 0
 end
