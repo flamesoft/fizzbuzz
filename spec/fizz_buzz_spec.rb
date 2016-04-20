@@ -15,4 +15,8 @@ describe 'fizz_buzz' do
     expect(fizz_buzz(15)).to eq 'fizz buzz'
   end
 
+  it "returns the same number if number is not divisible by 3,5 or 15" do
+    expect(fizz_buzz(2)).to eq 2
+  end
+
 end
