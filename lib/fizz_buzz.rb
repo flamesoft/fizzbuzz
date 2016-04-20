@@ -1,15 +1,12 @@
 # lib/fizz_buzz.rb
 
 def fizz_buzz(number)
-  if divisible_by_fifteen?(number)
-    'fizz buzz'
-  else
     case
+      when divisible_by_fifteen?(number) then 'fizz buzz'
       when divisible_by_three?(number) then 'fizz'
       when divisible_by_five?(number) then 'buzz'
       else number
       end
-  end
 end
 
 def divisible_by_three?(number)
